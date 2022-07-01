@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Weather.io</title>
+  </head>
+  <body>
+<div class="Section_top"></div>      <div class="glass"></div>
+    <main>
+      <div id="headingSection">
+        <h1 id="logo">Weather.io</h1>
+      </div>
+      <div  id="searchSection">
+        <form action="/" method="post">
+          <div>
+            <input autocomplete="off" placeholder="{{Enterlocation}}" type="text" name="cityName"/>
+          </div>
+          <button type="submit"><img src="images/search.png" alt=""></button>
+        </form>
+        <hr id="line">
+      </div>
+      
+      <div  id="displaySection">
+        <div>
+          {{degree}}
+          <h1 id="temp">
+            {{temp}}<span style="
+    margin: -5px 0px 0px 0px;
+    position: absolute;">&#8451;</span>
+          </h1>
+          <h2 id="location">
+            {{location}}
+          </h2>
+          <img style="width: 100px" src={{icon}} alt="">       
+        </div>
+      </div>
+      <div  id="infoSection">
+ 
+
+        <div><ul>
+          <li id="details" style="font-size: 30px">Weather Details: </li>
+          <li id="pressure"><span>Pressure: </span>{{pressure}}</li>
+          <li id="humidity"><span>Humidity: </span>{{humidity}}</li>
+          <li id="visibility"><span>Visibility: </span>{{visibility}}</li>
+          <li id="windspeed"><span>Windspeed: </span>{{windspeed}}</li>
+        </ul></div>
+      </div>
+    </main>
+  </body>
+  <script>
+    if ( window.history.replaceState ) {
+  window.history.replaceState( null, null, window.location.href );
+}
+  </script>
+</html>

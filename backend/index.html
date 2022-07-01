@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Weather.io</title>
+  </head>
+  <body>
+    <div class="Section_top"></div>
+      <div class="glass"></div>
+    <main>
+      <div id="headingSection">
+        <h1 id="logo">Weather.io</h1>
+      </div>
+      <div  id="searchSection">
+        <form action="/" method="post">
+          <div>
+            <input autocomplete="off" placeholder="Enter Location" type="text" name="cityName"/>
+          </div>
+          <button type="submit"><img src="images/search.png" alt=""></button>
+        </form>
+      </div>
+      <div  id="displaySection">
+      </div>
+      <div  id="infoSection">
+</div>
+      </div>
+    </main>
+  </body>
+  <script>
+    if ( window.history.replaceState ) {
+  window.history.replaceState( null, null, window.location.href );
+}
+  </script>
+</html>
